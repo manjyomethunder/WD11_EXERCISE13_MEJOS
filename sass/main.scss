@@ -1,0 +1,13 @@
+$primary: black;
+$dark: yellow;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+$mejos-theme-colors: (
+    "favorite1": purple,
+    "favorite2": brown
+);
+
+$theme-colors: map-merge($mejos-theme-colors , $theme-colors );
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
